@@ -26,7 +26,7 @@ entities:
       name: SRV "Salami-Salami"
     - type: Transform
       pos: -0.5104167,-0.5
-      parent: invalid
+      parent: 82
     - type: MapGrid
       chunks:
         0,0:
@@ -148,6 +148,18 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: NavMap
+  - uid: 82
+    components:
+    - type: MetaData
+      name: Map Entity
+    - type: Transform
+    - type: Map
+      mapPaused: True
+    - type: PhysicsMap
+    - type: GridTree
+    - type: MovedGrids
+    - type: Broadphase
+    - type: OccluderTree
 - proto: AirlockShuttle
   entities:
   - uid: 2
@@ -428,12 +440,12 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: ClothingHeadHelmetHardsuitBasic
+- proto: ClothingHeadHelmetEVALarge
   entities:
-  - uid: 82
+  - uid: 233
     components:
     - type: Transform
-      pos: 0.30235916,-0.6487955
+      pos: 0.3854167,-0.68144417
       parent: 1
 - proto: ClothingOuterDameDane
   entities:
